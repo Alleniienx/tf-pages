@@ -3,35 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>邮箱验证成功</title>
+  <title>邮箱验证成功 - AX采集</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       min-height: 100vh;
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 14px;
+      background:
+        radial-gradient(circle at top right, rgba(82, 196, 26, 0.12), transparent 30%),
+        linear-gradient(180deg, #f8fff5 0%, #ffffff 24%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: #333;
     }
-    .card {
-      text-align: center;
-      background: #fff;
-      border-radius: 12px;
-      padding: 40px 50px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .shell {
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
     }
-    .icon { font-size: 48px; margin-bottom: 16px; color: #52c41a; }
-    h1 { font-size: 22px; margin: 0 0 10px; }
-    p { font-size: 14px; color: #666; margin: 0; }
+    .card {
+      background: linear-gradient(180deg, #fbfff8 0%, #ffffff 100%);
+      border: 1px solid #dff0d3;
+      border-radius: 14px;
+      padding: 20px 18px;
+      box-shadow: 0 10px 24px rgba(69, 181, 36, 0.08);
+      text-align: center;
+    }
+    .icon {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 14px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(82, 196, 26, 0.12);
+      color: #52c41a;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #1f1f1f;
+      margin-bottom: 8px;
+    }
+    .desc {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666;
+      margin-bottom: 14px;
+    }
+    .tips {
+      text-align: left;
+      background: #f8fff5;
+      border: 1px solid #e4f4da;
+      border-radius: 10px;
+      padding: 12px 13px;
+      font-size: 13px;
+      line-height: 1.65;
+      color: #5c6b57;
+    }
+    .tips strong {
+      color: #2f2f2f;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="icon">&#10004;</div>
-    <h1>邮箱验证成功</h1>
-    <p>您可以关闭此页面，回到插件登录。</p>
+  <div class="shell">
+    <div class="card">
+      <div class="icon">&#10004;</div>
+      <div class="title">邮箱验证成功</div>
+      <div class="desc">您的账号邮箱已完成验证。现在可以回到 AX 采集插件，用刚注册的邮箱和密码登录。</div>
+      <div class="tips">
+        <strong>接下来怎么做：</strong><br>
+        1. 返回插件登录页<br>
+        2. 使用注册邮箱和密码登录<br>
+        3. 如需开通授权或额度，请联系管理员
+      </div>
+    </div>
   </div>
 </body>
 </html>
